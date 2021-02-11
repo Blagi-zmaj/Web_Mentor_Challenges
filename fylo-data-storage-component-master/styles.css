@@ -1,0 +1,154 @@
+body {
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 50%;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  /* background-color: silver; */
+  width: 60%;
+  height: 28vh;
+  position: absolute;
+  top: 33%;
+  left: 21%;
+}
+
+.left-card {
+  background: hsl(228, 56%, 26%);
+  flex: 30%;
+
+  padding: 5%;
+  margin-right: 5%;
+  border-radius: 10px 100px 10px 10px;
+  /* border-top-right-radius: 100px; */
+}
+
+.right-card {
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  flex-flow: column;
+  flex: 45%;
+  height: 75%;
+  position: relative;
+  top: 25%;
+  padding: 4%;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#logo {
+  margin-bottom: 7%;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 34%;
+  margin: 1% auto;
+}
+
+.storage-usage-parag{
+  margin: 0;
+}
+
+.storage-usage-row {
+  display: flex;
+  flex-flow: row nowrap;
+  /* background-color: silver; */
+  height: 20%;
+}
+
+.start-storage {
+  text-align: left;
+  flex: 1;
+  font-size: 10px;
+}
+
+.end-storage {
+  text-align: right;
+  flex: 1;
+  font-size: 10px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.cloud {
+  margin: 0;
+}
+
+.list-icons {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon-item {
+  background-color: hsl(229, 57%, 11%);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+
+.cloud-message {
+  background-color: #fff;
+  color: black;
+  font-size: 30px;
+  height: 60px;
+  width: 10vw;
+  text-align: center;
+  border-radius: 10px 10px 0 10px;
+  position: absolute;
+  bottom: 90%;
+  right: 5%;
+}
+
+.polygon-background {
+  height: 50px;
+  width: 10vw;
+  background-color: #fff;
+  clip-path: polygon(100% 70%,70% 0, 100% 0);
+}
+
+@media (max-width: 1000px){
+  body{
+    /* background-color: gold; */
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left-card {
+    padding: 7%;
+  }
+
+  .right-card {
+    padding: 6%;
+  }
+
+  .cloud-message{
+    background-color: #fff;
+    color: black;
+    font-size: 30px;
+    height: 60px;
+    width: 30vw;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+  }
+
+  .polygon-background {
+    height: 0;
+    width: 0;
+    /* background-color: red;
+    clip-path: polygon(0 0, 0,0); */
+  }
+}
